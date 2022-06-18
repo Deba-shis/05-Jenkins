@@ -1,29 +1,19 @@
 pipeline{
-	agent any
-	environment{
-	PATH="$PATH:/opt/apache-maven-3.6.3/bin"
-	}
-stages{
-stage('GetCode'){
-	steps{
-	git "https://github.com/Deba-shis/05-Jenkins.git"
-	}
- }
-stage('Build'){
-	steps{
-	sh 'mvn clean package'
-	}
- }
-stage('SonarQube analysis'){
-//def scannerHome=tool 'sonarScanner 4.0';
-steps{
-withSonarQubeEnv('Sonar-Server-7.8'){
-//if you have conf more than one global server connection, you can specify its name
-//sh "${scannerHome}/bin/sonar-scanner"
-sh "mvn sonar:sonar"
+    agent any
+    environment{
+        PATH="$PATH:/opt/apache-maven-3.6.3/bin"
+    }
+    stages{
+        stage('Getcode'){
+            steps{
+                git branch:'master',
+                url:'https://github.com/Deba-shis/05-Jenkins.git'
+            }
+        }
+        stage('build'){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
+    }
 }
-}
-}
-}
-}
-
