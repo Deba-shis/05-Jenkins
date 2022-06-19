@@ -1,15 +1,13 @@
 <html>
 <body>
-<h1><font color='red'>Welcome to Ashok IT..!!<font></h1>
-<h2>Learn Here.. Lead Anywhere..!! </h2>
-<a href="https://ashokitech.com/online-training-schedules">Click Here To See Training Schedules</a>
-</body>
 
-<h1>824996814</h1>
+<h2>Background Image</h2>
+
+<p>A background image for a p element:</p>
+
+<p style="background-image: url('img_girl.jpg');">
+i love you
+</p>
+
+</body>
 </html>
-KHDkhdkDH
-  JHDJKhK
-  
-  BkbdBDdkl
-  
-  cide changes in git..plz deploy again
