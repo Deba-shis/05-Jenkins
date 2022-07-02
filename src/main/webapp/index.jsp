@@ -6,7 +6,7 @@
 <p>A background image for a p element:</p>
 
 <p style="background-image: url('img_girl.jpg');">
-i love you
+hi good morning
 </p>
 
 </body>
