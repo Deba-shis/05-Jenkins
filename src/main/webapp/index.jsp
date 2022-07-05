@@ -1,13 +1,8 @@
 <html>
 <body>
 
-<h2>Background Image</h2>
-
-<p>A background image for a p element:</p>
-
-<p style="background-image: url('img_girl.jpg');">
-hi good morning
-</p>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
 </body>
 </html>
